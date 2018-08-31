@@ -1,0 +1,159 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "_mixins/rfs"
+
+
+// DEFAULT STYLES
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	+rfs(16)
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.ta-c
+	text-align: center
+
+h1
+	+rfs(48)
+	font-weight: 700
+
+h2
+	+rfs(32)
+
+h3
+	+rfs(22)
+
+p 
+	+rfs(16)
+
+*
+	margin: 0
+	padding: 0
+
+ul
+	list-style: none
+	li
+		display: inline-block
+
+.btn
+	color: $text
+	border: 2px solid #000000
+	text-transform: uppercase
+	font-weight: 700
+	&:hover
+		text-decoration: none
+
+section 
+	padding: 110px 0
+	.section_header
+		margin-bottom: 17px
+	.section_text
+		color: $text-grey
+		margin-bottom: 90px
+		+rfs(20)
+		font-weight: 400
+
+// MAIN STYLES
+// HEADER
+header
+	background-color: $orange
+	color: $header-text
+	padding: 40px 0
+	.header
+		min-height: calc(100vh - 80px)
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	// header top
+	.header_top
+		line-height: 42px
+		.menu, .social
+			+rfs(22)
+		.logo a
+			+rfs(30)
+			color: $header-text
+			font-weight: 700
+			&:hover
+				text-decoration: none
+				color: $text-grey
+		.social
+			text-align: right
+			&_link
+				margin-left: 4px
+	
+	//header middle
+	.header_middle
+		h1
+			margin-bottom: 22px
+		p
+			+rfs(20)
+			margin-bottom: 40px
+		.btn
+			padding: .5em 2.5em
+			+rfs(22)
+			&:hover
+				background-color: $text
+				color: $orange
+			&:active
+				background-color: $header-text
+				border-color: $header-text
+
+	// header bottom
+	.header_bottom
+		+rfs(30)
+		font-weight: 400
+
+// features
+.features
+	.list-item
+		display: flex
+		max-width: 290px
+		margin: 0 auto 90px auto
+		&_icon
+			+rfs(38)
+			width: 60px
+		&_text
+			max-width: 230px
+			p
+				line-height: 20px
+				+rfs(16)
+				color: $text-grey
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end
