@@ -69,243 +69,25 @@ ul
 	&:hover
 		text-decoration: none
 
-section 
-	padding: 110px 0 20px
+section
+	padding-top: 100px
 	.section_header
 		margin-bottom: 17px
 	.section_text
 		color: $text-grey
-		margin-bottom: 90px
+		margin-bottom: 60px
 		+rfs(20)
 		font-weight: 400
 
-// MAIN STYLES
+
 // HEADER
-header
-	background-color: $orange
-	color: $header-text
-	padding: 40px 0
-	.header
-		min-height: calc(100vh - 80px)
-		display: flex
-		flex-direction: column
-		justify-content: space-between
+@import "header"
 
-	// header top
-	.header_top
-		line-height: 42px
-		.menu, .social
-			+rfs(22)
-		.logo a
-			+rfs(30)
-			color: $header-text
-			font-weight: 700
-			&:hover
-				text-decoration: none
-				color: $text-grey
-		.social
-			text-align: right
-			&_link
-				margin-left: 4px
-	
-	//header middle
-	.header_middle
-		h1
-			margin-bottom: 22px
-		p
-			+rfs(20)
-			margin-bottom: 40px
-		.btn
-			padding: .5em 2.5em
-			+rfs(22)
-			&:hover
-				background-color: $text
-				color: $orange
-			&:active
-				background-color: $header-text
-				border-color: $header-text
+//MAIN
+@import "sections"
 
-	// header bottom
-	.header_bottom
-		+rfs(30)
-		font-weight: 400
-
-// features
-.features
-	.list-item
-		display: flex
-		max-width: 290px
-		margin: 0 auto 45px auto
-		&_icon
-			+rfs(38)
-			width: 60px
-		&_text
-			width: 230px
-			p
-				line-height: 20px
-				+rfs(18)
-				color: $text-grey
-
-
-// price-list
-.price-list
-	.price-item
-		text-align: center
-		display: flex
-		flex-direction: column
-		width: 185px
-		margin: 0 auto
-		margin-bottom: 60px
-		padding: 20px 0
-		box-shadow: 0 20px 50px rgba(0,0,0,.3)
-		border: 1px solid #ededed
-		border-radius: 10px
-		transition: 0.5s
-		&:hover
-			transform: scale(1.1)
-		&_icon
-			height: 100px
-			width: 100px
-			border-radius: 50%
-			background-color: $grey
-			margin: 0 auto
-			line-height: 100px
-			+rfs(38)
-			margin-bottom: 10px
-		&_name
-			+rfs(24)
-			margin-bottom: 10px
-		&_description
-			+rfs(14)
-			color: $text-grey
-			line-height: 1.5em
-			margin-bottom: 15px
-		&_price
-			+rfs(32)
-			font-weight: 700
-			margin-bottom: 10px
-			position: relative
-			&::after
-				content: ''
-				position: absolute
-				bottom: -5px
-				left: 50%
-				transform: translateX(-50%)
-				height: 2px
-				width: 20%
-				background-color: $text
-		&_duration
-			color: $text-grey
-			font-weight: 400
-			margin-bottom: 20px
-		.btn-price
-			width: 140px
-			font-size: 16px
-			margin: 0 auto
-			line-height: 43px
-			color: $text
-			&:hover
-				color: #ffffff
-				background-color: $text
-		
-	li:nth-child(2)
-			.price-item 
-				&_icon
-					background-color: $text
-					color: #ffffff
-
-
-// our-work
-.work-list
-	.work-item
-		display: block
-		width: 220px
-		margin: 0 auto
-		color: $text
-		text-decoration: none
-		margin-bottom: 60px
-		&_image
-			width: 220px
-			height: 220px
-			position: relative
-			margin-bottom: 10px
-			border-radius: 5px
-			overflow: hidden
-			border: 1px solid #ededed
-			.image_overlay
-				background-color: rgba($text,0.7)
-				opacity: 0
-				color: #ffffff
-				padding: 10px
-				display: flex
-				justify-content: space-between
-				align-items: flex-end
-				position: absolute
-				top: 0
-				left: 0
-				width: 220px
-				height: 220px
-				transition: all .3s ease-in-out
-				.views, .time
-					font-size: 14px
-					i 
-						margin: 0 5px
-		&_name
-			text-align: center
-			margin-bottom: 0
-		&_category
-			line-height: 0.8
-			color: $text-grey
-			text-align: center
-			margin-bottom: 0
-		&:hover 
-			.work-item_image
-				.image_overlay
-					opacity: 1
-
-.team-list
-	.team-item
-		width: 180px
-		margin: 0 auto 35px auto
-		padding: 20px 0
-		text-align: center
-		&_picture
-			margin-bottom: 30px
-		&_fullname
-			font-weight: 400
-			margin-bottom: 0
-		&_specialization
-			font-weight: 400
-			color: $text-grey
-		&_description
-			font-size: 14px
-			color: #313841
-			margin-bottom: 5px
-		&_socials
-			li
-				margin-right: 5px
-				&:last-child
-					margin-right: 0
-			a
-				display: inline-block
-				transition: all 0.5s ease-in-out
-				color: $text
-				&:hover
-					text-decoration: none
-					transform: rotateY(360deg)
-
-.stats-list
-	.stats-item
-		text-align: center
-		&_icon
-			+rfs(48)	
-			margin-bottom: 0
-		&_count
-			+rfs(24)
-			margin-bottom: -5px
-		&_description
-			font-size: 14px
-			color: $text-grey
+//FOOTER
+@import "footer"
 
 
 

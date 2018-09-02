@@ -1,0 +1,48 @@
+header
+	background-color: $orange
+	color: $header-text
+	padding: 40px 0
+	.header
+		min-height: calc(100vh - 80px)
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	// header top
+	.header_top
+		line-height: 42px
+		.menu, .social
+			+rfs(22)
+		.logo a
+			+rfs(30)
+			color: $header-text
+			font-weight: 700
+			&:hover
+				text-decoration: none
+				color: $text-grey
+		.social
+			text-align: right
+			&_link
+				margin-left: 4px
+	
+	//header middle
+	.header_middle
+		h1
+			margin-bottom: 22px
+		p
+			+rfs(20)
+			margin-bottom: 40px
+		.btn
+			padding: .5em 2.5em
+			+rfs(22)
+			&:hover
+				background-color: $text
+				color: $orange
+			&:active
+				background-color: $header-text
+				border-color: $header-text
+
+	// header bottom
+	.header_bottom
+		+rfs(30)
+		font-weight: 400
