@@ -16,7 +16,7 @@
 
 // price-list
 .price-list
-	max-width: 800px
+	// max-width: 800px
 	margin: 0 auto
 	li:nth-child(2)
 			.price-item_icon
@@ -27,16 +27,19 @@
 	text-align: center
 	display: flex
 	flex-direction: column
-	width: 185px
+	width: 190px
 	margin: 0 auto
 	margin-bottom: 60px
-	padding: 20px 0
+	padding: 20px 5px
 	box-shadow: 0 20px 50px rgba(0,0,0,.3)
 	border: 1px solid #ededed
 	border-radius: 10px
 	transition: 0.5s
 	&:hover
 		transform: scale(1.1)
+	&_body
+		display: flex
+		flex-direction: column
 	&_icon
 		height: 100px
 		width: 100px
@@ -208,6 +211,9 @@
 		bottom: 0
 		right: -1.5em
 
+.connect
+	margin-bottom: 75px
+
 .contacts-item
 	text-align: center
 	margin-bottom: 40px
@@ -239,6 +245,7 @@
 		margin-bottom: 20px
 		border: 2px solid #000
 		color: $text-grey
+		resize: none
 	&_button
 		align-self: center
 		padding: 10px 25px

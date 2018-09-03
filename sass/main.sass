@@ -16,7 +16,7 @@
 
 body
 	+rfs(16)
-	min-width: 320px
+	min-width: 300px
 	position: relative
 	font-family: $default-font
 	overflow-x: hidden
@@ -69,15 +69,28 @@ ul
 	&:hover
 		text-decoration: none
 
-section
+section, footer
 	padding-top: 100px
-	.section_header
+	.section_header,
+	.footer-header
 		margin-bottom: 17px
-	.section_text
+	.section_text,
+	.footer-text
 		color: $text-grey
 		margin-bottom: 60px
 		+rfs(20)
 		font-weight: 400
+
+.visually-hidden
+	position: absolute
+	overflow: hidden
+	clip: rect(0 0 0 0)
+	height: 1px
+	width: 1px   
+	margin: -1px
+	padding: 0
+	border: 0
+
 
 
 // HEADER
