@@ -32,7 +32,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Custom Browsers Color End -->
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
 
@@ -43,30 +43,27 @@
 	<header>
 		<div class="container header">
 			<div class="row header_top">
-				<div class="col-4 menu">
-					<i class="fas fa-bars"></i>
-				</div>
 
-				<div class="col-4 ta-c logo">
+				<div class="col-6 logo">
 					<a href="#">
 						<img src="img/fingerprint.png" alt="Tiny one logo" height="43" width="43">
 						<span>tinyone</span>
 					</a>
 				</div>
 
-				<div class="col-4">
+				<div class="col-6">
 					<ul class="social">
 						<li class="social_link">
-							<i class="fab fa-facebook-f"></i>
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
 						</li>
 						<li class="social_link">
-							<i class="fab fa-twitter"></i>
+							<a href="#"><i class="fab fa-twitter"></i></a>
 						</li>
 						<li class="social_link">
-							<i class="fab fa-google-plus-g"></i>
+							<a href="#"><i class="fab fa-google-plus-g"></i></a>
 						</li>
 						<li class="social_link">
-							<i class="fab fa-pinterest-p"></i>
+							<a href="#"><i class="fab fa-pinterest-p"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -77,20 +74,20 @@
 			<div class="row header_middle">
 
 				<div class="col-md-8 offset-md-2 ta-c">
-					<h1>Inspire your inspiration</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					<h1 class="wow animated fadeIn">Inspire your inspiration</h1>
+					<p class="wow animated fadeIn" data-wow-delay=".3s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
 						Donec rutrum
 						sed sem quis venenatis.</p>
-					<a href="#" class="btn">Get start</a>
+					<a href="#pricing" class="btn wow animated fadeIn" data-wow-delay=".6s">Get start</a>
 				</div>
 			</div>
 			<!-- /.header_middle -->
 
 			<div class="row header_bottom">
 				<div class="col-2 offset-5 ta-c">
-					<span class="arrow-down">
+					<a id="arrow-down" class="arrow-down" href="#features">
 						<i class="fas fa-long-arrow-alt-down"></i>
-					</span>
+					</a>
 				</div>
 			</div>
 			<!-- /.header_bottom -->
@@ -101,7 +98,7 @@
 
 	<main>
 		<div class="container">
-			<section class="features">
+			<section id="features" class="features">
 
 				<div class="row ta-c">
 					<div class="col-sm-8 offset-sm-2">
@@ -113,7 +110,7 @@
 				</div>
 
 				<ul class="row features_list">
-					<li class="col-sm-6 col-lg-4">
+					<li class="col-sm-6 col-lg-4 wow animated fadeInUp">
 						<div class="list-item">
 							<div class="list-item_icon">
 								<i class="fas fa-tablet-alt"></i>
@@ -124,7 +121,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-6 col-lg-4">
+					<li class="col-sm-6 col-lg-4 wow animated fadeInUp">
 						<div class="list-item">
 							<div class="list-item_icon">
 								<i class="far fa-lemon"></i>
@@ -135,7 +132,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-6 col-lg-4">
+					<li class="col-sm-6 col-lg-4 wow animated fadeInUp">
 						<div class="list-item">
 							<div class="list-item_icon">
 								<i class="far fa-folder"></i>
@@ -146,7 +143,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-6 col-lg-4">
+					<li class="col-sm-6 col-lg-4 wow animated fadeInUp">
 						<div class="list-item">
 							<div class="list-item_icon">
 								<i class="fab fa-html5"></i>
@@ -157,7 +154,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-6 col-lg-4">
+					<li class="col-sm-6 col-lg-4 wow animated fadeInUp">
 						<div class="list-item">
 							<div class="list-item_icon">
 								<i class="far fa-envelope"></i>
@@ -168,7 +165,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-6 col-lg-4">
+					<li class="col-sm-6 col-lg-4 wow animated fadeInUp">
 						<div class="list-item">
 							<div class="list-item_icon">
 								<i class="far fa-bookmark"></i>
@@ -184,7 +181,7 @@
 			</section>
 			<!-- /.features -->
 
-			<section class="pricing">
+			<section id="pricing" class="pricing">
 				<div class="row ta-c">
 					<div class="col-sm-8 offset-sm-2">
 						<h2 class="section_header">Pricing And Free Trial</h2>
@@ -193,7 +190,7 @@
 				</div>
 
 				<ul class="row price-list">
-					<li class="col-sm-6 col-md-4 order-md-first">
+					<li class="col-sm-6 col-md-4 order-md-f wow animated fadeInUp">
 						<div class="price-item">
 							<span class="price-item_icon">
 								<i class="fas fa-tablet-alt"></i>
@@ -206,7 +203,7 @@
 						</div>
 					</li>
 
-					<li class="col-12 col-md-4 order-sm-first">
+					<li class="col-12 col-md-4 order-sm-f wow animated fadeInUp">
 						<div class="price-item">
 							<span class="price-item_icon">
 								<i class="fas fa-laptop"></i>
@@ -219,7 +216,7 @@
 						</div>
 					</li>
 
-					<li class="col-sm-6 col-md-4">
+					<li class="col-sm-6 col-md-4 wow animated fadeInUp">
 						<div class="price-item">
 							<span class="price-item_icon">
 								<i class="fas fa-desktop"></i>
@@ -553,7 +550,7 @@
 							<img class="review_picture" src="img/team-photo-1.png" alt="customer's profile picture" height="104" width="104">
 							<h2 class="review_fullname">John Doe</h2>
 							<p class="review_company">From Wỏdpress</p>
-							<blockquote class="review_quote"><span class="quote-icon quote-icon_top"><i class="fas fa-quote-right"></i></span>Lorem	ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. <span class="quote-icon quote-icon_bottom"><i class="fas fa-quote-left"></i></span></blockquote>
+							<blockquote class="review_quote">Lorem	ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</blockquote>
 						</div>
 					</div>
 				</div>
@@ -617,16 +614,84 @@
 		<!-- /.container -->
 	</main>
 
-	<footer>
-		<div class="row ta-c">
-			<div class="col-sm-8 offset-sm-2">
-				<h2 class="footer-header">Sign up for our newsletter</h2>
-				<p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facere, explicabo tempora, numquam laboriosam odit enim ratione itaque, officiis eos hic harum quibusdam ipsa. Magni?</p>
+	<footer class="footer">
+		<div class="container">
+			<div class="row ta-c">
+				<div class="col-sm-8 offset-sm-2">
+					<h2 class="footer-header">Sign up for our newsletter</h2>
+					<p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facere, explicabo tempora, numquam laboriosam odit enim ratione itaque, officiis eos hic harum quibusdam ipsa. Magni?</p>
+				</div>
+			</div>
+			<form class="footer-form row" action="#">
+				<div class="col-md-6 offset-md-2">
+					<label class="visually-hidden" for="email-update">Enter your email to update</label>
+					<input class="footer-form_input" type="email" name="email-update" id="email-update" placeholder="Enter your email to update">
+				</div>
+				<div class="col-md-2">
+					<button class="btn footer-form_button" type="submit">Submit</button>
+				</div>
+			</form>
+			<div class="row footer-bottom">
+				<div class="order-last order-md-first col-12 col-md-3">
+					<ul class="footer-contact">
+						<li class="footer-contact_item">
+							<address class="footer_address">
+								HALOVIETNAM&nbsp;LTD<br>
+								66,&nbsp;Dang&nbsp;Van&nbsp;ngu,&nbsp;Dong&nbsp;Da<br>
+								Hanoi,&nbsp;Vietnam
+							</address>
+						</li>
+						<li class="footer-contact_item link">
+							<a class="link_item" href="mailto:contact@halovietnam.com">contact@halovietnam.com</a>
+						</li>
+						<li class="footer-contact_item link"><a class="link_item" href="tel:+84435149182">+844&nbsp;35149182</a></li>
+					</ul>
+				</div>
+				<div class="col-6 offset-md-1 col-md-2">
+					<ul class="footer-links">
+						<li class="footer-links_item link"><a href="#" class="link_item">Examples</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Shop</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">License</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-2">
+					<ul class="footer-links">
+						<li class="footer-links_item link"><a href="#" class="link_item">Contact</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">About</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Privacy</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Terms</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-2">
+					<ul class="footer-links">
+						<li class="footer-links_item link"><a href="#" class="link_item">Download</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Support</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Documents</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-2">
+					<ul class="footer-links">
+						<li class="footer-links_item link"><a href="#" class="link_item">Media</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Blog</a></li>
+						<li class="footer-links_item link"><a href="#" class="link_item">Forums</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</footer>
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 2cc646f9725a9eec15deedbd5d0de0c5cd86e902
 	<script src="js/scripts.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 </body>
 
 </html>
