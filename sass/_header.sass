@@ -24,6 +24,28 @@ header
 			text-align: right
 			&_link
 				margin-left: 4px
+				a
+					color: $text
+					display: inline-block
+					transition: all 0.5s ease-in-out
+					&:hover
+						color: $text
+						text-decoration: none
+						transform: rotateY(360deg)
+
+						// li
+						// 			margin-right: 5px
+						// 			&:last-child
+						// 				margin-right: 0
+						// 		a
+						// 			display: inline-block
+						// 			transition: all 0.5s ease-in-out
+						// 			color: $text
+						// 			&:hover
+						// 				text-decoration: none
+						// 				transform: rotateY(360deg)
+
+
 	
 	//header middle
 	.header_middle
@@ -46,3 +68,9 @@ header
 	.header_bottom
 		+rfs(30)
 		font-weight: 400
+		.arrow-down
+			color: $header-text
+			text-decoration: none
+			&:hover
+				color: $header-text
+				text-decoration: none
